@@ -16,7 +16,7 @@ SELECT
 	hire_date 
 	
 FROM employees
-WHERE hire_date LIKE '%1986%';
+WHERE extract(year from hire_date) = 1986;
 
 -- #3
 SELECT 
